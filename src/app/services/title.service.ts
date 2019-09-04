@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from "rxjs";
-import { Title } from "@angular/platform-browser";
+import { BehaviorSubject } from 'rxjs';
+import { Title } from '@angular/platform-browser';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,7 @@ export class TitleService {
     private titleService: Title
   ) { }
 
-  setTitle(title:string) {
+  setTitle(title: string) {
     this.titleService.setTitle(title);
     this.title.next(title);
   }

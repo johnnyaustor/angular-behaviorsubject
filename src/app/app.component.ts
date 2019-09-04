@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(
     private titleService: TitleService
   ) {
-    this.titleService.title.subscribe((val)=>{
+    this.titleService.title.subscribe((val) => {
       this.title = val;
     });
   }
